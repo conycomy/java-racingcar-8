@@ -1,4 +1,4 @@
-package racingcar;
+package racingcar.util;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatCode;
@@ -7,7 +7,6 @@ import java.util.HashSet;
 import java.util.Set;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import racingcar.util.RandomNumberGenerator;
 
 public class RandomNumberGeneratorTest {
 

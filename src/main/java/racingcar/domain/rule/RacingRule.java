@@ -11,7 +11,7 @@ public class RacingRule {
         this.generator = generator;
     }
 
-    public boolean isMoveable() {
+    public boolean isMovable() {
         int randomNumber = generator.generate();
 
         if (randomNumber >= 4) {

@@ -23,7 +23,7 @@ public class Car implements RaceParticipant {
 
     @Override
     public void move(RacingRule rule) {
-        boolean isMoveable = rule.isMoveable();
+        boolean isMoveable = rule.isMovable();
         this.position = this.position.advance(isMoveable);
 
     }

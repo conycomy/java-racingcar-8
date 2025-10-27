@@ -3,11 +3,11 @@ package racingcar.domain;
 import java.util.List;
 import racingcar.domain.rule.RacingRule;
 
-public class RaceingParticipants {
+public class RacingParticipants {
 
     private final List<RaceParticipant> participants;
 
-    public RaceingParticipants(List<RaceParticipant> participants) {
+    public RacingParticipants(List<RaceParticipant> participants) {
         this.participants = participants;
     }
 

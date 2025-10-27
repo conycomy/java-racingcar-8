@@ -24,7 +24,7 @@ public class ResultView {
 
 
     public void printWinners(RaceResult result) {
-        List<RaceParticipant> winners = result.getName();
+        List<RaceParticipant> winners = result.getWinners();
 
         String winnerNames = winners.stream()
                 .map(RaceParticipant::getName)
@@ -33,7 +33,6 @@ public class ResultView {
         System.out.println("최종 우승자 : " + winnerNames);
     }
 
-    // private 도우미 메서드: 거리에 따라 '-'를 출력
     private void printDash(int count) {
         for (int i = 0; i < count; i++) {
             System.out.print("-");

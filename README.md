@@ -11,7 +11,7 @@
   - RaceParticipant 참가자 공통 규격 정의 (인터페이스) [ O ]
   - Car : 이름 + 위치, move() 구현 [ O ]
   - RaceResult : 최대 거리, 우승자 계산 [ O ]
-  - RacingCars : 전체 이동, 결과 생성 [ ]
+  - RaceParticipants : 전체 이동, 결과 생성 [ ]
 
  검증 & 입출표 
   - 쉼표 구분, 5자 이하 검사 [ ]

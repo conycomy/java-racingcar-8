@@ -1,12 +1,13 @@
 package racingcar.domain.rule;
 
+import racingcar.util.NumberGenerator;
 import racingcar.util.RandomNumberGenerator;
 
 public class RacingRule {
 
-    private final RandomNumberGenerator generator;
+    private final NumberGenerator generator;
 
-    public RacingRule(RandomNumberGenerator generator) {
+    public RacingRule(NumberGenerator generator) {
         this.generator = generator;
     }
 

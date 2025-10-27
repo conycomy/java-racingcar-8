@@ -1,7 +1,6 @@
 package racingcar.domain.rule;
 
 import racingcar.util.NumberGenerator;
-import racingcar.util.RandomNumberGenerator;
 
 public class RacingRule {
 

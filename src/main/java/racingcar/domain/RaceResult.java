@@ -1,6 +1,6 @@
 package racingcar.domain;
 
-import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -28,5 +28,17 @@ public class RaceResult {
                 .max()
                 .orElse(0);
     }
+
+
+    public List<RaceParticipant> getWinners() {
+        return Collections.unmodifiableList(winners);
+    }
+
+
+    public int getMaxDistance() {
+        return maxDistance;
+    }
 }
+
+
 

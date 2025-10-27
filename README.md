@@ -53,25 +53,28 @@
 - `RandomNumberGenerator.java` : 난수 생성 구현체
 
 ---
-
+src/main/java/
 └── racingcar/
-├── Application.java                  <– 메인 진입점
-├── RacingGame.java                   <– 게임 로직 제어 (컨트롤러)
-├── domain/                           <– 도메인 모델 패키지
-│   ├── Car.java
-│   ├── Position.java
-│   ├── RaceParticipant.java          <– 인터페이스
-│   ├── RaceResult.java
-│   ├── RacingParticipants.java       <– 집합 관리
-│   └── rule/                         <– 규칙 패키지
-│       └── RacingRule.java
-├── io/                               <– 입출력(View) 패키지
-│   ├── InputView.java
-│   └── ResultView.java
-└── util/                             <– 유틸리티 패키지
-├── NameValidator.java
-├── NumberGenerator.java          <– 인터페이스
-└── RandomNumberGenerator.java
+    ├── Application.java                  <-- 메인 진입점
+    ├── RacingGame.java                   <-- 게임 로직 제어 (컨트롤러)
+    │
+    ├── domain/                           <-- 핵심 도메인 모델
+    │   ├── Car.java                      
+    │   ├── Position.java                 
+    │   ├── RaceParticipant.java          <-- 인터페이스
+    │   ├── RaceResult.java               
+    │   ├── RacingParticipants.java       <-- 참가자 집합 관리
+    │   └── rule/                         
+    │       └── RacingRule.java           <-- 전진 규칙 판단
+    │
+    ├── io/                               <-- 입출력 (View)
+    │   ├── InputView.java                
+    │   └── ResultView.java               
+    │
+    └── util/                             <-- 유틸리티/검증
+        ├── NameValidator.java            
+        ├── NumberGenerator.java          <-- 인터페이스
+        └── RandomNumberGenerator.java
 
 ---
 ### 설계 목표와 어떤 점을 중점으로 봐주면 감사하겠습니다. 

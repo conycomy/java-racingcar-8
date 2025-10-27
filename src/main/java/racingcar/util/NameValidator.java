@@ -31,17 +31,21 @@ public class NameValidator {
         long distinctCount = names.stream()
                 .distinct()
                 .count();
-        if(distinctCount != names.size()) {
+        if (distinctCount != names.size()) {
             throw new IllegalArgumentException("이름은 중복될 수 없습니다. 다른 닉네임을 설정해주세요");
         }
     }
 
     public List<String> validateAndGetNames(String input) {
         List<String> names = splitByComma(input);
+
+        names = names.stream()
+                .filter(name -> !name.isEmpty())
+                .collect(Collectors.toList());
+
         validateNameLength(names);
         validateEmptyOrDuplicate(names);
         return names;
-
     }
 
 

@@ -1,5 +1,6 @@
 package racingcar.domain;
 
+import java.util.Collections;
 import java.util.List;
 import racingcar.domain.rule.RacingRule;
 
@@ -17,5 +18,9 @@ public class RacingParticipants {
 
     public RaceResult createResult() {
         return new RaceResult(participants);
+    }
+
+    public List<RaceParticipant> getParticipants() {
+        return Collections.unmodifiableList(participants);
     }
 }
